@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Welcome to B&R</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>  
+  
+  <!-- Page content -->
+  <h1 id="supersecretId">Welcome to B&R!</h1>
+
+  <!-- Modal background -->
+  <div id="modalId" class="modal">
+
+    <!-- Modal content -->
+    <form id="loginFormId" class="modal-content animate" onsubmit="return false;">
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" id="username" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+
+        <button type="submit" id="submit">Login</button>
+        <label id="attempt">3 attemt left</label>
+        <label id="forgotpsw" class="psw">Forgot <a href="">password?</a></label>
+      </div>
+    </form>
+  </div>
+  
+  <script data-main="./app/main" src="./common/js/libs/require.js"></script>
+</body>
+</html>
